@@ -10,13 +10,13 @@ const App = () => {
 			id: nanoid(),
 			head: 'Default',
 			text: 'This is my first note!',
-			date: '05/09/2021',
+			date: '9/5/2021',
 		},
 		{
 			id: nanoid(),
 			head: 'Default',
 			text: 'This is my second note!',
-			date: '05/09/2021',
+			date: '9/5/2021',
 		},
 	]);
 
