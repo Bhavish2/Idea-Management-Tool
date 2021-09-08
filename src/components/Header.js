@@ -1,18 +1,19 @@
 import React from 'react';
 
-const Header = ({ handleToggleDarkMode }) => {
+const Header = ({ handleToggleDarkMode,notep }) => {
 	return (
 		<div className='header'>
 			<h1 style={{ color: 'white' }}>Idea Managment Tool</h1>
-			<div
+			<button
 				onClick={() =>
 					handleToggleDarkMode(
-						(previousDarkMode) =>previousDarkMode
+						(previousnoteMode) =>!previousnoteMode
 					)
 				}
 				className='save'
 			>
-			</div>
+       {notep ? <span>Ungroup</span>:<span>Group Together</span>}
+			</button>
 		</div>
 	);
 };
