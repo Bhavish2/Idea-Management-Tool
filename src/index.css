@@ -21,27 +21,47 @@ code {
 .top{
 		align-items: center;
 		font-style: oblique;
-		font-size: 20px;
+		font-size: 25px;
 }
 
  .to{
-	 font-size: 15px;
+	 font-size: 18px;
  }
-.dark-mode {
-	background-color: black;
+
+ .lo{
+	 font-size: 20px;
+ }
+
+.decorater{
+	 color:  blanchedalmond;
+	 text-align: center;
+	 font-size: 30px;
+	 font-style:oblique;
 }
 
+.note-mode {
+	max-width: 960px;
+ 	margin-right: auto;
+ 	margin-left: auto;
+ 	padding-right: 15px;
+ 	padding-left: 15px;
+ 	min-height: 100vh;
+}
+
+.head{
+	color:black;
+}
 .dark-mode h1 {
 	color: white;
 }
 
 .container {
-	max-width: 960px;
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: 15px;
-	padding-left: 15px;
-	min-height: 100vh;
+	 /* max-width: 980px;*/
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 15px;
+		padding-left: 15px;
+		min-height: 100vh;
 
 }
 
@@ -60,6 +80,15 @@ code {
 		minmax(250px, 1fr)
 	);
 }
+
+
+
+.lighter{
+	 align-items: center;
+	 border-style: outset;
+	 padding: 15px;
+}
+
 
 .note.new {
 	background-color: #67d7cc;
@@ -80,12 +109,14 @@ textarea:focus {
 	border: none;
 	border-radius: 15px;
 	padding: 5px 10px 5px 10px;
+	font-size: 15px;
 }
 
 .save:hover {
 	background-color: #ededed;
 	cursor: pointer;
 }
+
 
 .note {
 	background-color: #FFFF88;
@@ -98,6 +129,27 @@ textarea:focus {
 	white-space: pre-wrap;
 }
 
+.note-list-copy{
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}
+
+.note-copy{
+	background-color: #FFFF88;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+
+
 .note-footer {
 	display: flex;
 	align-items: center;
@@ -105,6 +157,10 @@ textarea:focus {
 }
 
 .delete-icon {
+	cursor: pointer;
+}
+
+.edit-icon{
 	cursor: pointer;
 }
 
